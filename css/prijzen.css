@@ -1,0 +1,97 @@
+:root {
+    --main-color: #07aac4;
+    --main-font: 'Passion One', sans-serif;
+}
+
+.img-prijzen {
+    margin-top: 5rem;
+    width: 60%;
+}
+
+.card {
+    border: solid 3px var(--main-color);
+    height: 50.8rem;
+    width: 45.2rem;
+    background-color: var(--main-color);
+    margin-left: 44.8rem;
+    margin-top: -51rem;
+}
+
+.card p {
+    margin-left: 5rem;
+    color: #fff;
+    width: 30rem;
+}
+
+.card b {
+    margin-left: 5rem;
+    color: #fff;
+    font-family: var(--main-font);
+    font-size: 20px;
+}
+
+
+.card h2 {
+    margin-left: 5rem;  
+    margin-top: 8rem;
+    font-size: 50px;
+    font-family: var(--main-font);
+    color: #fff;
+}
+
+.contact-btn {
+    border-style: solid;
+    border-color: var(--main-color);
+    background-color: #fff;
+    padding: 16px 32px;
+    text-align: center;
+    display: inline-block;
+    font-size: 16px;
+    cursor: pointer;
+    border-radius: 1.5rem;
+    margin-left: 5rem;
+    margin-top: 5rem;
+    transition-duration: 0.4s;
+    color: #fff;
+    font-family: 'Source Sans 3', sans-serif;
+}
+
+
+.contact-btn:hover {
+    background-color: #f2f2f2;
+    text-decoration: white;
+  }
+
+
+.img-prijzen2 {
+    margin-left: 45rem;
+    margin-top: -50.4rem;
+    height: 52%;
+}
+
+.card-2 {
+    height: 50.4rem;
+    width: 45rem;
+    border: solid white;
+}
+
+.titel {
+    font-size: 30px;
+    font-family: var(--main-font);
+    color: var(--main-color);
+    margin-left: 5rem;
+    margin-top: 5rem;
+}
+
+
+.card-2 p {
+    width: 400px;
+    margin-left: 5rem;
+}
+
+.card-2 h5 {
+    margin-left: 5rem;
+    margin-top: 5rem;
+    font-size: 20px;
+    font-family: var(--main-font);
+}

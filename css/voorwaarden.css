@@ -1,0 +1,24 @@
+:root {
+    --main-color: #07aac4;
+    --main-font: 'Passion One', sans-serif;
+}
+
+.voorwaarden {
+    background-color: var(--main-color);
+    color: #ffff;
+}
+
+.voorwaarden b {
+    font-size: 40px;
+    text-align: left;
+    font-family: var(--main-font);
+}
+
+
+.voorwaarden p {
+    height: 100%;
+    width: 50rem;
+    padding-top: 10rem;
+    margin-left: 20rem;
+    padding-bottom: 10px;
+}

@@ -1,0 +1,87 @@
+:root {
+    --main-color: #07aac4;
+}
+
+.img5 {
+    height: auto;
+    width: 100%;
+}
+
+#text1 {
+    height: 71.7rem;
+    width: 41rem;
+    margin-top: -72rem;
+    margin-left: 49rem;
+    background-color: var(--main-color);
+    border: #07aac4;
+}
+
+#text1 h1 {
+    color: #fff;
+    font-family: 'Passion One', sans-serif;
+    font-size: 50px;
+    margin-left: 2rem;
+    margin-top: 10rem;
+}
+
+#text1 p {
+    color: #fff;
+    margin-left: 2rem;
+}
+
+.box {
+    margin-left: 7rem;
+    place-items: center;
+    margin-top: 5rem;
+    word-spacing: 20px; 
+    margin-bottom: 10px;
+}
+
+.round-img {
+    display: inline-block;
+    
+}
+
+.round-img b {
+    color: var(--main-color);
+    font-size: 40px;
+    font-family: 'Passion One', sans-serif;
+    margin-left: 10px;
+}
+
+.round-img p {
+    height: 300px;
+    width: 180px;
+    margin-left: 10px;
+}
+
+#text3 {
+    height: 45rem;
+    width: 100%;
+    background-color: var(--main-color);
+}
+
+#text3 h3 {
+    margin-top: -33rem;
+    margin-left: 8rem;
+    font-size: 35px;
+    color: #fff;
+    font-family: 'Passion One', sans-serif;
+}
+
+#text3 p {
+    height: 500px;
+    width: 450px;
+    margin-left: 8rem;
+    color: #fff;
+    word-spacing: 5px;
+    font-size: 18px;
+    margin-top: -15px;
+}
+
+.img6 {
+    margin-left: 45rem;
+    margin-top: 10px;
+    height: 575px;
+    width: 575px;
+}

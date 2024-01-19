@@ -1,0 +1,39 @@
+:root {
+    --main-color: #07aac4;
+    --main-font: 'Passion One', sans-serif;
+}
+
+.container {
+    border-style: solid;
+    border: #000;
+    height: auto;
+    width: 500px;
+    border: #000;
+    border-style: solid;
+    margin: 5px;
+    padding: 5px;
+  }  
+
+.img-contact {
+    margin-left: 30.5rem;
+}
+
+.contact {
+    width: 450px;
+    height: 480px;
+    margin-top: -30rem;
+}
+
+.contact b {
+    font-size: 40px;
+    font-family: var(--main-font);
+    color: var(--main-color);
+    margin-left: 4rem;
+}
+
+.contact p {
+    margin-left: 4rem;
+    margin-top: 4rem;
+}
+
+
