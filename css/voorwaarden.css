@@ -9,7 +9,7 @@
 }
 
 .voorwaarden b {
-    font-size: 40px;
+    font-size: 4vw;
     text-align: left;
     font-family: var(--main-font);
 }
@@ -17,9 +17,9 @@
 
 .voorwaarden p {
     height: 100%;
-    width: 50rem;
+    width: 60%;
     padding-top: 10rem;
-    margin-left: 20rem;
+    margin-left: 20%;
     padding-bottom: 10px;
     word-spacing: 3px;
     font-size: 17px;
@@ -27,4 +27,22 @@
     font-family: 'Roboto', sans-serif;
     font: 200;
 }
-    
+      
+@media (max-width: 1024px) {
+    .voorwaarden p {
+        height: 80%;
+    }
+}
+
+   @media (max-width: 768px) {
+    .voorwaarden p {
+        height: 50%;
+    }
+}
+
+    @media (max-width: 768px) {
+        .voorwaarden b {
+            height: 50%;
+            font-size: 30px;
+        }
+    }
