@@ -87,11 +87,12 @@
 .card-2 p {
     width: 400px;
     margin-left: 5rem;
+    margin-top: -10px;
 }
 
 .card-2 h5 {
     margin-left: 5rem;
-    margin-top: 5rem;
+    margin-top: 4rem;
     font-size: 20px;
     font-family: var(--main-font);
 }

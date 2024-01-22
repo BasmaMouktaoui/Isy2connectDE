@@ -27,6 +27,7 @@
 #text1 p {
     color: #fff;
     margin-left: 2rem;
+    font-size: 17px;
 }
 
 .box {
@@ -53,6 +54,8 @@
     height: 300px;
     width: 180px;
     margin-left: 10px;
+    letter-spacing: 1px;
+    word-spacing: 1px;
 }
 
 #text3 {
