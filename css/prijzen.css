@@ -8,6 +8,32 @@
     width: 60%;
 }
 
+@media only screen and (max-width: 480px) {
+    .img-prijzen {
+      display: block;
+      width: 100%;
+    }
+  }
+
+  /* Mobile (portrait) */
+@media only screen and (max-width: 768px) {
+    .img-prijzen {
+      width: 100%;
+      display: block;
+      margin: 10px 0;
+    }
+  }
+  
+  /* Tablet (landscape) */
+  @media only screen and (min-width: 481px) and (max-width: 768px) {
+    .img-prijzen {
+      width: 100%;
+      display: inline-block;
+      vertical-align: top;
+      margin: 10 0px;
+    }
+  }
+
 .card {
     border: solid 3px var(--main-color);
     height: 50.8rem;
@@ -39,6 +65,48 @@
     color: #fff;
 }
 
+@media only screen and (max-width: 480px) {
+    .card {
+      display: block;
+      width: 100%;
+    }
+  }
+
+  /* Mobile (portrait) */
+@media only screen and (max-width: 768px) {
+    .card {
+      width: 100%;
+      display: block;
+      margin: 10px 0;
+    }
+
+    .card h2 {
+        font-size: 60px;
+    }
+
+    .card p {
+        font-size: 20px;
+    }
+  }
+  
+  /* Tablet (landscape) */
+  @media only screen and (min-width: 481px) and (max-width: 768px) {
+    .card {
+      width: 100%;
+      display: inline-block;
+      vertical-align: top;
+      margin: 10 0px;
+    }
+
+    .card h2 {
+        font-size: 60px;
+    }
+
+    .card p {
+        font-size: 20px;
+    }
+  }
+
 .contact-btn {
     border-style: solid;
     border-color: var(--main-color);
@@ -62,12 +130,37 @@
     text-decoration: white;
   }
 
-
 .img-prijzen2 {
     margin-left: 45rem;
     margin-top: -50.4rem;
     height: 52%;
 }
+
+@media only screen and (max-width: 480px) {
+    .img-prijzen2 {
+      display: block;
+      width: 100%;
+    }
+  }
+
+  /* Mobile (portrait) */
+@media only screen and (max-width: 768px) {
+    .img-prijzen2 {
+      width: 100%;
+      display: block;
+      margin: 10px 0;
+    }
+  }
+  
+  /* Tablet (landscape) */
+  @media only screen and (min-width: 481px) and (max-width: 768px) {
+    .img-prijzen2 {
+      width: 100%;
+      display: inline-block;
+      vertical-align: top;
+      margin: 10 0px;
+    }
+  }
 
 .card-2 {
     height: 50.4rem;
@@ -96,3 +189,6 @@
     font-size: 20px;
     font-family: var(--main-font);
 }
+
+
+
