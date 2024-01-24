@@ -65,19 +65,23 @@ b {
   }
   
   [type="submit"] {
-    width: 75%;
+    border: none;
     background-color: var(--main-color);
-    border-radius:25px;
-    border:0;
-    cursor:pointer;
-    color:white;
-    font-size:24px;
-    padding-top:10px;
-    padding-bottom:10px;
-    transition: all 0.3s;
-    margin-top:-4px;
-    font-weight:700;
+    padding: 16px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin: 4px 2px;
+    transition-duration: 0.4s;
+    cursor: pointer;
+    border-radius: 1.5rem;
+    margin-top: 3rem;
+    color: #fff;
+    width: 75%;
   }
+
+  [type="submit"]:hover { background:#05c2df; }
 
   #adress {
     text-align: center;
@@ -99,3 +103,6 @@ b {
     margin-left: 8rem;
 }
 
+.link {
+    color: var(--main-color);
+}
