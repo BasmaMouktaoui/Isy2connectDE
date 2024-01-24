@@ -4,15 +4,10 @@
 }
 
 .container {
-    border-style: solid;
-    border: #000;
-    height: auto;
-    width: 500px;
-    border: #000;
-    border-style: solid;
-    margin: 5px;
-    padding: 5px;
-  }  
+    padding-left: 10rem;
+    padding-top: 10rem;
+    display: flex;
+}  
 
 .img-contact {
     margin-left: 30.5rem;
@@ -36,4 +31,71 @@
     margin-top: 4rem;
 }
 
+b {
+    font-size: 30px;
+    font-family: var(--main-font);
+    color: var(--main-color);
+    padding: 13px;
+}
+
+.input {
+    font-weight:500;
+    font-size: 18px;
+    border-radius: 10px;
+    line-height: 22px;
+    background-color: transparent;
+    
+    
+    transition: all 0.3s;
+    padding: 13px;
+    margin-bottom: 15px;
+    width: 100%;
+    box-sizing: border-box #f2f2ff;
+    outline: 0;
+  }
+
+ .input:focus { border:2px solid var(--main-color); }
+  
+  .textarea {
+    height: auto;
+    width: 100%;
+    line-height: 150%;
+    resize: vertical;
+    margin-left: 500px;
+  }
+  
+  [type="submit"] {
+    width: 75%;
+    background-color: var(--main-color);
+    border-radius:25px;
+    border:0;
+    cursor:pointer;
+    color:white;
+    font-size:24px;
+    padding-top:10px;
+    padding-bottom:10px;
+    transition: all 0.3s;
+    margin-top:-4px;
+    font-weight:700;
+  }
+
+  #adress {
+    text-align: center;
+
+  }
+
+#address p {
+    margin: 5px 0;
+    margin-left: 6rem;
+    text-align: center;
+}
+
+#address a {
+    color: #07aac4;
+    text-decoration: none;
+}
+
+.googlemaps {
+    margin-left: 8rem;
+}
 

@@ -40,31 +40,48 @@
 
 
     <div class="container">
+
         <div class="contact-wrapper">
-       <!-- <form action="https://api.web3forms.com/submit" method="POST"><!-- Value key aanmaken op https://web3forms.com/ -->
+            <b>Hinterlassen Sie Ihre Daten</b>
+            <br><br>
+            <form action="https://api.web3forms.com/submit" method="POST"> <!--Value key aanmaken op https://web3forms.com/ -->
             <input type="hidden" name="access_key" value="2b5399e2-8166-4659-ad39-0c0c9a9cf3db">
-            <label for="fname">Vorname</label>
-            <input type="text" class="input" id="fname" name="firstname" placeholder=""><br>
+            <label for="fname"></label>
+            <input type="text" class="input" id="fname" name="Vorname" placeholder="Vorname" required><br>
         
-            <label for="fname">Nachname</label>
-            <input type="text" class="input" id="lname" name="lastname" placeholder=""><br>
+            <label for="fname"></label>
+            <input type="text" class="input" id="lname" name="Nachname" placeholder="Nachname" required><br>
 
-            <label for="lname">E-mail</label>
-            <input type="text" class="input" id="email" name="e-mial" placeholder=""><br>
+            <label for="lname"></label>
+            <input type="text" class="input" id="email" name="e-mial" placeholder="E-mail" required><br>
         
-            <label for="subject">Telefonnummer </label>
-            <input type="text" class="input" id="phone" name="phonenumber" placeholder=""><br>
+            <label for="subject"> </label>
+            <input type="text" class="input" id="phone" name="phonenumber" placeholder="Telefonnummer" ><br>
 
-            <label for="subject"> Name der Schule / des Trägers</label>
-            <input type="text" class="input" id="name" name="sname" placeholder=""><br>
+            <label for="subject"> </label>
+            <input type="tekst" class="input" id="name" name="school-name" placeholder="Name der Schule / des Trägers"  required><br>
 
-            <label for="subject">Anmerkungen</label>
-            <textarea name="message" required></textarea>
-
+            <label for="subject"></label>
+            <textarea name="text" required placeholder="Nachricht" class="input"></textarea>
+<br><br>
             <input type="submit" value="Versenden">
         </form>
     </div>
-</div>
+
+        <div id="address">
+            <p>Isy Schule</p>
+            <p>Stadttor 1</p>
+            <p>40219 Düsseldorf</p>
+            <p>0211 / 41873480</p>
+            <p><a href="mailto:info@isy-schule.de">info@isy-schule.de</a></p>
+        </div>
+
+        <div class="googlemaps">
+            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2499.197215928525!2d6.758687976574415!3d51.215442531989844!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x80238a675d41b1b7%3A0x2627a3d2d14915c7!2sIsy%20Schule!5e0!3m2!1sen!2snl!4v1706106624899!5m2!1sen!2snl" width="500" height="600" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+        </div>
+        </div>
+
+        
     </section>
 
     <footer class="footer">
