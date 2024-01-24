@@ -2,10 +2,18 @@
     --main-color: #07aac4;
 }
 
-.img5 {
+/*.img5 {
     height: auto;
-    width: 100%;
+    max-width: 100%;
 }
+*/
+
+.img5 {
+    display: inline-block; /* change the default display type to inline-block */
+    background-size: 100% 100%;
+
+}
+
 
 #text1 {
     height: 71.7rem;
@@ -21,7 +29,7 @@
     font-family: 'Passion One', sans-serif;
     font-size: 50px;
     margin-left: 2rem;
-    margin-top: 10rem;
+    margin-top: 10rem;  
 }
 
 #text1 p {
@@ -30,17 +38,58 @@
     font-size: 17px;
 }
 
+/*@media (max-width: 768px) {
+    #text1 {
+        width: 100%;
+        height: 500px;
+        margin-left: 0%;
+        margin-top: -4px;
+
+    }
+
+    #text1 h1 {
+        font-size: 2rem;
+        margin-top: 15px;
+    }
+
+    #text1 p {
+        font-size: 1rem;
+        margin: 0 1rem;
+    }
+}*/
+
+@media (max-width: 768px) {
+    #text1 {
+        width: 100%;
+        height: auto; /* adjust height to content */
+        margin-left: 0%;
+        margin-top: -4px;
+    }
+
+    #text1 h1 {
+        font-size: 2rem; /* adjust font size to fit smaller screens */
+        margin-top: 1rem;
+    }
+
+    #text1 p {
+        font-size: 1rem; /* adjust font size to fit smaller screens */
+        margin: 0 0.5rem; /* adjust margin to fit smaller screens */
+    }
+}
+
 .box {
-    margin-left: 7rem;
+    display: flex;
     place-items: center;
     margin-top: 5rem;
-    word-spacing: 20px; 
-    margin-bottom: 10px;
+    word-spacing: 10px; 
+    margin-bottom: 6rem;
+    align-items: center;
+    justify-content: space-between;
+
 }
 
 .round-img {
-    display: inline-block;
-    
+    display: inline-block;  
 }
 
 .round-img b {
@@ -56,7 +105,28 @@
     margin-left: 10px;
     letter-spacing: 1px;
     word-spacing: 1px;
+    margin-bottom: 12rem;
+    font-size: 24px;
 }
+  
+  /* add media queries to apply different styles for different screen sizes */
+  @media (max-width: 600px) {
+    .round-img p {
+      font-size: 24px; /* change the font size for small screens */
+    }
+  }
+  
+  @media (min-width: 600px) and (max-width: 900px) {
+    .round-img p {
+      font-size: 24px; /* change the font size for medium screens */
+    }
+  }
+  
+  @media (min-width: 900px) {
+    .round-img p {
+      font-size: 24px; /* change the font size for large screens */
+    }
+  }
 
 #text3 {
     height: 45rem;
@@ -83,6 +153,7 @@
 }
 
 .img6 {
+    display: flex;
     margin-left: 45rem;
     margin-top: 10px;
     height: 575px;
