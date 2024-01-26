@@ -1,0 +1,67 @@
+section {
+    display: flex;
+    padding-top: 8rem;
+}
+
+.privacy {
+    margin: auto;
+    width: 50%;
+    padding: 2rem;
+    box-sizing: border-box;
+}
+
+.privacy h1 {
+    font-size: 40px;
+    color: #07aac4;
+    font-family: 'Passion One', sans-serif; 
+}
+
+.privacy b {
+    color: #07aac4;
+    font-family: 'Passion One', sans-serif; 
+    font-size: 30px;
+}
+
+.privacy p {
+    font-family: 'Source Sans 3', sans-serif;
+    width: 100%;
+    max-width: 40rem;
+    word-spacing: 2px;
+}
+
+/* Media query for smaller screens */
+@media (max-width: 992px) {
+    .privacy {
+        width: 100%;
+    }
+
+    .privacy h1 {
+        font-size: 30px;
+    }
+
+    .privacy b {
+        font-size: 25px;
+    }
+
+    .privacy p {
+        max-width: 100%;
+    }
+}
+
+@media (max-width: 768px) {
+    .privacy {
+        width: 100%;
+    }
+
+    .privacy h1 {
+        font-size: 30px;
+    }
+
+    .privacy b {
+        font-size: 25px;
+    }
+
+    .privacy p {
+        max-width: 100%;
+    }
+}
