@@ -94,7 +94,7 @@
 
 .round-img b {
     color: var(--main-color);
-    font-size: 40px;
+    font-size: 35px;
     font-family: 'Passion One', sans-serif;
     margin-left: 10px;
 }
@@ -106,25 +106,27 @@
     letter-spacing: 1px;
     word-spacing: 1px;
     margin-bottom: 12rem;
-    font-size: 15px;
+    font-size: 2rem;
+    font-family: 'Roboto', sans-serif;
+
 }
   
   /* add media queries to apply different styles for different screen sizes */
   @media (max-width: 600px) {
     .round-img p {
-      font-size: 24px; 
+      font-size: 1em; 
     }
   }
   
   @media (min-width: 600px) and (max-width: 900px) {
     .round-img p {
-      font-size: 24px; 
+      font-size: 1em; 
     }
   }
   
   @media (min-width: 900px) {
     .round-img p {
-      font-size: 24px; 
+      font-size: 1em; 
     }
   }
 
