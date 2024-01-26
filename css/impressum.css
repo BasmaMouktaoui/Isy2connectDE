@@ -1,15 +1,40 @@
-.impressum {
+section {
     display: flex;
-    margin-left: 20rem;
-    margin-top: 20rem;
-    width: 750px;
-    font-size: 16px;
+    padding-top: 6rem;
 }
 
-.impressum b  {
-    margin-top: -5rem;
-    font-family:'Passion One', sans-serif;
-    color: #07aac4;
-    font-size: 40px;
-    margin-left: 5rem;
+.impressum {
+    margin: auto;
+    width: 50%;
+    padding: 2rem;
+    box-sizing: border-box;
 }
+
+.impressum h1 {
+    font-size: 40px;
+    color: #07aac4;
+    font-family: 'Passion One', sans-serif; 
+}
+
+.impressum p {
+    font-family: 'Source Sans 3', sans-serif;
+    width: 100%;
+    max-width: 40rem;
+    word-spacing: 2px;
+}
+
+/* Media query for smaller screens */
+@media (max-width: 992px) {
+    .impressum {
+        width: 100%;
+    }
+
+    .impressum h1 {
+        font-size: 40px;
+    }
+
+    .impressum p {
+        max-width: 100%;
+    }
+}
+
