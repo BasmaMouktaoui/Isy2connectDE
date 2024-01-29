@@ -1,0 +1,21 @@
+.container {
+    width: 1600px;
+    margin: auto;
+}
+
+.subcontainer {
+    width: 85%;
+    margin: auto;
+}
+
+@media (max-width:1600px) {
+    .container {
+        width: 100%;
+    }
+}
+
+@media (max-width:1024px) {
+    .cookies {
+        padding: 10px 0;
+    }
+}
