@@ -8,6 +8,53 @@
     margin: auto;
 }
 
+#cookies {
+    position: fixed;
+    bottom: 50px;
+    right: 20px;
+    width: 100%;
+    max-width: 400px;
+    background: rgba(255, 255, 255, 0.698);
+    border-radius: 8px;
+    padding: 15px 25px 22px;
+    border: solid white;
+}
+
+.cookies h2 {
+   color: #07aac4; 
+   font-family: 'Passion One', sans-serif;
+   font-size: 30px;
+}
+
+.cookies a {
+    color: #07aac4;
+}
+
+.cookies a:hover {
+text-decoration: underline;
+}
+
+#cookies-btn  {
+    border: none;
+    padding: 15px 0;
+    width: 80%;
+    text-align: center;
+    text-decoration: none;
+    font-size: 16px;
+    transition-duration: 0.4s;
+    border-radius: 1.5rem;
+    margin-top: 16px;
+    justify-content: space-between;
+    background-color: #07aac4;
+    display: inline-block;
+    color: white;
+}
+
+#cookies-btn:hover {
+    background-color: #05c2df;
+    text-decoration: white;
+  }
+
 @media (max-width:1600px) {
     .container {
         width: 100%;
