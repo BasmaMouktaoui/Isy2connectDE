@@ -419,6 +419,7 @@ body {
   border-style: solid;
   border-color: var(--main-color);
   background-color: #fff;
+  width: 30%;
   padding: 16px 32px;
   text-align: center;
   display: inline-block;
@@ -434,6 +435,24 @@ body {
 .button-contact:hover {
   background-color: var(--main-color);
   text-decoration: white;
+}
+
+/* Media query for smaller screens */
+@media (max-width: 768px) {
+  .button-demo {
+    margin-left: 2rem;
+    margin-top: 12rem;
+  }
+
+  .button-contact {
+    margin-left: 0.5rem;
+  }
+}
+
+@media (max-width: 567px) {
+  .button-contact {
+    margin-left: 2rem;
+  }
 }
 
 /*.img2 {
@@ -467,6 +486,8 @@ body {
   color: white;
   text-align: center;
   box-sizing: border-box;
+  height: 50px;
+  margin-top: -50px;
 }
 
 .footer-img {

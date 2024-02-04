@@ -6,21 +6,26 @@
 .img-prijzen {
     margin-top: 5rem;
     width: 60%;
+    background-size: 100% 100%;
+
 }
 
 @media only screen and (max-width: 480px) {
     .img-prijzen {
       display: block;
-      width: 100%;
+      width: 60%;
+      object-fit: cover;
     }
   }
 
   /* Mobile (portrait) */
 @media only screen and (max-width: 768px) {
     .img-prijzen {
-      width: 100%;
+      width: 60%;
       display: block;
       margin: 10px 0;
+      object-fit: cover;
+
     }
   }
   
@@ -31,6 +36,7 @@
       display: inline-block;
       vertical-align: top;
       margin: 10 0px;
+      object-fit: cover;
     }
   }
 

@@ -1,15 +1,15 @@
-:root {
+/*:root {
     --main-color: #07aac4;
 }
 
-/*.img5 {
+.img5 {
     height: auto;
     max-width: 100%;
 }
-*/
+*
 
 .img5 {
-    display: inline-block; /* change the default display type to inline-block */
+    display: inline-block; /* change the default display type to inline-block *
     background-size: 100% 100%;
 
 }
@@ -56,29 +56,30 @@
         font-size: 1rem;
         margin: 0 1rem;
     }
-}*/
+}*
 
 @media (max-width: 768px) {
     #text1 {
         width: 100%;
-        height: auto; /* adjust height to content */
+        height: auto; /* adjust height to content *
         margin-left: 0%;
         margin-top: -4px;
     }
 
     #text1 h1 {
-        font-size: 2rem; /* adjust font size to fit smaller screens */
+        font-size: 2rem; /* adjust font size to fit smaller screens *
         margin-top: 1rem;
     }
 
     #text1 p {
-        font-size: 1rem; /* adjust font size to fit smaller screens */
-        margin: 0 0.5rem; /* adjust margin to fit smaller screens */
+        font-size: 1rem; /* adjust font size to fit smaller screens *
+        margin: 0 0.5rem;  adjust margin to fit smaller screens *
     }
 }
 
 .box {
     display: flex;
+    flex-wrap: nowrap;
     place-items: center;
     margin-top: 5rem;
     word-spacing: 10px; 
@@ -90,8 +91,18 @@
 
 .round-img {
     display: inline-block;  
+    height: auto;
 }
 
+@media (max-width: 768px) {
+    .box {
+      flex-wrap: wrap;
+    }
+    .round-img {
+      width: 100%;
+      height: auto;
+    }
+  }
 .round-img b {
     color: var(--main-color);
     font-size: 35px;
@@ -108,10 +119,9 @@
     margin-bottom: 12rem;
     font-size: 2rem;
     font-family: 'Roboto', sans-serif;
-
 }
   
-  /* add media queries to apply different styles for different screen sizes */
+  /* add media queries to apply different styles for different screen sizes *
   @media (max-width: 600px) {
     .round-img p {
       font-size: 1em; 
@@ -160,4 +170,299 @@
     margin-top: 10px;
     height: 575px;
     width: 575px;
+}
+*/
+
+:root {
+  --main-color: #07aac4;
+}
+
+/*.img5 {
+    height: auto;
+    max-width: 100%;
+}
+*/
+
+/* Feedback */
+
+/* Maak flex container, hierin zit de image en tekst */
+.home-container {
+  display: flex;
+  height: 40%;
+}
+
+/* Zorgt ervoor dat het onder elkaar komt */
+@media (max-width: 900px) {
+  .home-container {
+    flex-direction: column; /* 'column' is onder elkaar 'row' is naast elkaar  */
+    height: fit-content;
+  }
+}
+/* geef maximale hoogte en breedte binnen de flex conntainer, 
+   omdat er 2 items in de flex container zitten (div img5 en div mogelijkheden tekst)
+   worden deze automatisch verdeeld in de flex container  */
+.img5 {
+  height: 100%;
+  width: 100%;
+  background-size: 100% 100%;
+}
+
+/* zelfde voor image */
+.img5 img {
+  height: 100%;
+  width: 100%;
+  object-fit: cover;
+}
+
+@media (max-width: 900px) {
+  .img5 img{
+    width: 100%;
+    height: auto; /* adjust height to content */
+
+  }
+}
+
+/* zoals eerder gezegd, verdeeld de flexbox automatisch de divs
+   binnen de flexbox container nu word het door 2 gedeeld. 
+   als je een 3e div toevoegd word het door 3 gedeeld */
+.mogelijkheden-tekst {
+  background-color: var(--main-color);
+  border: #07aac4;
+}
+
+.mogelijkheden-tekst h1 {
+  color: #fff;
+  font-family: "Passion One", sans-serif;
+  font-size: 50px;
+  margin-left: 2rem;
+  margin-top: 10rem;
+}
+
+.mogelijkheden-tekst p {
+  color: #fff;
+  margin-left: 2rem;
+  font-size: 17px;
+}
+
+/* Einde feedback */
+
+/*@media (max-width: 768px) {
+    #mogelijkheden-tekst {
+        width: 100%;
+        height: 500px;
+        margin-left: 0%;
+        margin-top: -4px;
+
+    }
+
+    #mogelijkheden-tekst h1 {
+        font-size: 2rem;
+        margin-top: 15px;
+    }
+
+    #mogelijkheden-tekst p {
+        font-size: 1rem;
+        margin: 0 1rem;
+    }
+}*/
+
+@media (max-width: 900px) {
+  .mogelijkheden-tekst {
+    width: 100%;
+    height: auto; /* adjust height to content */
+    margin-left: 0%;
+    margin-top: -4px;
+  }
+
+  .mogelijkheden-tekst h1 {
+    margin-top: 5rem;
+    font-size: 4rem;
+  }
+
+  .mogelijkheden-tekst p {
+    margin-bottom: 7rem;
+    width: 80%;
+    font-size: 25px;
+  }
+}
+
+@media (max-width: 768px) {
+  .mogelijkheden-tekst {
+    width: 100%;
+    height: auto; /* adjust height to content */
+    margin-left: 0%;
+    margin-top: -4px;
+  }
+
+  .mogelijkheden-tekst h1 {
+    font-size: 4rem; /* adjust font size to fit smaller screens */
+    margin-top: 5rem;
+  }
+
+  .mogelijkheden-tekst p {
+    font-size: 23px; /* adjust font size to fit smaller screens */
+    margin: 2rem; /* adjust margin to fit smaller screens */
+    margin-bottom: 7rem;
+    width: 80%;
+  }
+}
+
+
+.box {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 2rem;
+}
+
+.round-images {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+
+.round-img {
+  flex-basis: calc(33.33% - 2rem);
+  margin-bottom: 2rem;
+  padding: 3rem;
+  height: 50rem;
+}
+
+.round-img b {
+  color: var(--main-color);
+  font-size: 35px;
+  font-family: "Passion One", sans-serif;
+  margin-left: 10px;
+  margin-left: 1rem;
+}
+
+.round-img p {
+  height: auto;
+  width: 12rem;
+  margin-left: 10px;
+  letter-spacing: 1px;
+  word-spacing: 1px;
+  margin-bottom: 12rem;
+  font-size: 1rem;
+  margin-left: 1rem;
+  font-family: "Roboto", sans-serif;
+}
+
+@media (max-width: 1100px) {
+  .round-img {
+    flex-basis: calc(40% - 2rem);
+  }
+
+  img {
+    height: 350px;
+    width: 350px;
+  }
+
+  .round-img b {
+    font-size: 45px;
+  }
+
+  .round-img p {
+    font-size: 20px;
+    width: 18rem;
+  }
+}
+
+@media (max-width: 768px) {
+  .round-img {
+    flex-basis: calc(40% - 2rem);
+  }
+
+  img {
+    height: 320px;
+    width: 320px;
+  }
+
+  .round-img b {
+    font-size: 45px;
+  }
+
+  .round-img p {
+    font-size: 25px;
+    width: 18rem;
+  }
+}
+
+@media (max-width: 500px) {
+  .round-img {
+    margin-right: auto;
+    margin-left: auto;
+    margin-bottom: 20rem;
+  }
+
+  .round-img p {
+    font-size: 31px;
+    width: auto;
+  }
+
+  .round-img b {
+    font-size: 60px;
+  }
+
+  img {
+    height: 700px;
+    width: 700px;
+  }
+
+}
+
+.text3 {
+  height: 40rem;
+  width: 100%;
+  margin-bottom: 10rem;
+  background-color: var(--main-color);
+}
+
+.text3 h3 {
+  margin-top: -33rem;
+  margin-left: 8rem;
+  font-size: 35px;
+  color: #fff;
+  font-family: "Passion One", sans-serif;
+}
+
+
+
+.text3 p {
+  height: 500px;
+  width: 450px;
+  margin-left: 8rem;
+  color: #fff;
+  word-spacing: 5px;
+  font-size: 18px;
+  margin-top: -15px;
+}
+
+@media (max-width: 768px) {
+  .text3 {
+
+  }
+}
+
+@media (max-width: 500px) {
+
+
+}
+
+.img6 {
+  display: flex;
+  margin-left: 45rem;
+  margin-top: 10px;
+  height: 575px;
+  width: 575px;
+}
+
+@media (max-width: 768px) {
+  .img6 {
+    flex-direction: column;
+  }
+}
+
+@media (max-width: 500px) {
+
+
 }
