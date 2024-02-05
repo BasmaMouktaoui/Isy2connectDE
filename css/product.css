@@ -370,6 +370,7 @@
 @media (max-width: 768px) {
   .round-img {
     flex-basis: calc(40% - 2rem);
+    margin: auto;
   }
 
   img {
@@ -382,8 +383,7 @@
   }
 
   .round-img p {
-    font-size: 25px;
-    width: 18rem;
+    width: 100%;
   }
 }
 
@@ -417,7 +417,12 @@
   background-color: var(--main-color);
 }
 
-.text3 h3 {
+#text3 {
+  color: white;
+  font-family: "Poppins", sans-serif;
+}
+
+#text3 h3 {
   margin-top: -33rem;
   margin-left: 8rem;
   font-size: 35px;
@@ -425,9 +430,7 @@
   font-family: "Passion One", sans-serif;
 }
 
-
-
-.text3 p {
+#text3 p {
   height: 500px;
   width: 450px;
   margin-left: 8rem;
@@ -435,17 +438,7 @@
   word-spacing: 5px;
   font-size: 18px;
   margin-top: -15px;
-}
-
-@media (max-width: 768px) {
-  .text3 {
-
-  }
-}
-
-@media (max-width: 500px) {
-
-
+  display: block;
 }
 
 .img6 {
@@ -456,13 +449,32 @@
   width: 575px;
 }
 
-@media (max-width: 768px) {
-  .img6 {
-    flex-direction: column;
+/* Media query for screens smaller than 768px */
+@media screen and (max-width: 768px) {
+  .text3 {
+    height: 80rem;
   }
+
+  #text3  {
+      margin-top: 39rem;
+      margin-left: -5rem;
+  }
+
+  #text3 p {
+    width: 90%;
+    font-size: 20px;
+  }
+
 }
 
-@media (max-width: 500px) {
+@media screen and (max-width: 768px) {
+  .img6 {
+    margin-left: 5rem;
+  }
 
+}
 
+.f-img {
+  height: 130px;
+  width: 160px;
 }
