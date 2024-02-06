@@ -469,12 +469,24 @@
 
 @media screen and (max-width: 768px) {
   .img6 {
-    margin-left: 5rem;
+    margin-left: 5.5rem;
+    margin-right: 0px;
+    position: relative;
   }
 
 }
 
-.f-img {
+
+
+@media screen and (max-width: 400px) {
+  .img6 {
+    margin-left: 8rem;
+  }
+
+}
+
+
+/*.f-img {
   height: 130px;
   width: 160px;
-}
+}*/

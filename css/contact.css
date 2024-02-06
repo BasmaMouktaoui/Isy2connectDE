@@ -10,6 +10,8 @@
 }  
 
 .img-contact {
+    width: 100%;
+    display: flex;
     margin-left: 30.5rem;
 }
 

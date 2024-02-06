@@ -21,7 +21,6 @@ body {
   
   a {
     color: #000;
-    font-size: 17px;
     margin-top: 10px;
   } 
 
@@ -471,6 +470,13 @@ body {
   width: fit-content;
 }
 
+@media (max-width: 768px) {
+.img3 {
+  margin-left: 0px;
+  margin-right: 0px;
+  }
+}
+
 .img4 {
   height: 34rem;
   width: fit-content;
@@ -487,7 +493,7 @@ body {
   text-align: center;
   box-sizing: border-box;
   height: 50px;
-  margin-top: -50px;
+  margin-bottom: 0px;
 }
 
 .footer-img {
