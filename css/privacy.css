@@ -5,7 +5,7 @@ section {
 
 .privacy {
     margin: auto;
-    width: 50%;
+    width: 80%;
     padding: 2rem;
     box-sizing: border-box;
 }
@@ -25,8 +25,13 @@ section {
 .privacy p {
     font-family: 'Source Sans 3', sans-serif;
     width: 100%;
-    max-width: 40rem;
+    max-width: 70rem;
     word-spacing: 2px;
+}
+
+.privacy strong {
+    font-family: 'Source Sans 3', sans-serif;
+    font-size: 20px
 }
 
 /* Media query for smaller screens */
