@@ -13,7 +13,7 @@
 </head>
 <body>
             
-    <header class="header">
+<header class="header">
     <a href="index.html"><img src="images/Logo-transparant.png" class="logo"></a>
         <input class="menu-btn" type="checkbox" id="menu-btn" />
             <label class="menu-icon" for="menu-btn"><span class="navicon"></span></label>
@@ -22,11 +22,33 @@
                     <li><a href="product.html">Produkt</a></li>
                     <li><a href="branches.html">Branchen</a></li>
                     <li><a href="prijzen.html">Preise</a></li>
-                    <li><a href="contact.html">kontakt</a></li>
+                    <li class="active"><a href="contact.html">kontakt</a></li>
                     <li><a href="voorwaarden.html">Geschäftsbedingungen</a></li>
+                    <button class="btn"><a href="contact.html">Demo aanvragen</a></button>
                 </ul>
     </header>
 
+
+    <!--<form method="post" action="send-email.php">
+        <label for="name">Name</label>
+        <input type="text" id="name" name="name" required/>
+
+        <label for="lastname">lastname</label>
+        <input type="text" id="lastname" name="lastname" required/>
+        
+        <label for="email">email</label>
+        <input type="text" id="email" name="email" required/>
+
+        <label for="subject">subject</label>
+        <input type="text" id="subject" name="subject" required/>
+
+        <label for="message">message</label>
+        <textarea name="message" id="message" required></textarea> 
+        
+        <br>
+
+        <button>send message</button>
+    </form> -->
     <section>
         
     <div class="img-contact">
@@ -71,21 +93,19 @@
         </form>
     </div>
 
-        <div id="address">
-            <p>Isy Schule</p>
+        <div class="address">
+            <p>Isy2connect</p>
             <p>Stadttor 1</p>
             <p>40219 Düsseldorf</p>
-            <p>0211 / 41873480</p>
+            <p>0211 54206177</p>
             <p><a href="mailto:info@isy-schule.de">info@isy-schule.de</a></p>
         </div>
 
-        <div class="googlemaps">
-            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2499.197215928525!2d6.758687976574415!3d51.215442531989844!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x80238a675d41b1b7%3A0x2627a3d2d14915c7!2sIsy%20Schule!5e0!3m2!1sen!2snl!4v1706106624899!5m2!1sen!2snl" width="500" height="600" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
-        </div>
+            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2499.197215928525!2d6.758687976574415!3d51.215442531989844!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x80238a675d41b1b7%3A0x2627a3d2d14915c7!2sIsy%20Schule!5e0!3m2!1sen!2snl!4v1706106624899!5m2!1sen!2snl" class="googlemaps"  allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+      
         </div>
 
-        
-    </section>
+    </section> 
 
     <footer class="footer">
             <div class="footer-img">
@@ -94,12 +114,12 @@
                 <button class="footer-button"><a href="voorwaarden.html">Geschäftsbedingungen</a></button>
 
                     
-                <div id="icons">
+              <!--  <div id="icons">
                     <a href=""><i class='bx bxl-facebook bx-md'></i></a>
                     <a href=""><i class='bx bxl-instagram bx-md'></i></a>
                     <a href=""><i class='bx bxl-android bx-md'></i></a>
                     <a href=""><i class='bx bxl-apple bx-md'></i></a>
-                </div>
+                </div>-->
 
                 <div id="footer-text">
                     <a href="impressum.html">Impressum</a>
@@ -107,7 +127,7 @@
                     <a href="">Cookie-Einstellungen</a>
                 </div>
         </footer>
-    </footer>
-     
+    </section> 
     </body>
     </html>
+        

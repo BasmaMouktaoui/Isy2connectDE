@@ -239,6 +239,7 @@
 }
 
 .mogelijkheden-tekst p {
+  font-family: 'Source Sans 3', sans-serif;
   color: #fff;
   margin-left: 2rem;
   font-size: 17px;
@@ -344,7 +345,7 @@
   margin-bottom: 12rem;
   font-size: 1rem;
   margin-left: 1rem;
-  font-family: "Roboto", sans-serif;
+  font-family: 'Source Sans 3', sans-serif;
 }
 
 @media (max-width: 1100px) {
@@ -439,6 +440,8 @@
   font-size: 18px;
   margin-top: -15px;
   display: block;
+  font-family: 'Source Sans 3', sans-serif;
+
 }
 
 .img6 {

@@ -4,18 +4,48 @@
 }
 
 .container {
-    padding-left: 10rem;
+    padding: 2rem;
     padding-top: 10rem;
     display: flex;
 }  
 
 .img-contact {
-    width: 100%;
-    display: flex;
-    margin-left: 30.5rem;
+    max-width: 100%;
+    height: auto;
+    display: flex;   
+    margin-left: 30.5rem; /* adjust as needed */
 }
 
+@media only screen and (max-width: 1200px) {
+    .img-contact {
+        margin-left: 15.2rem; /* center image horizontally for small screens */
+        width: auto;
+    }
+}
+
+@media only screen and (max-width: 991px) {
+    .img-contact {
+        flex-direction: column;
+        align-items: center; /* center image horizontally */
+    }
+}
+
+@media only screen and (max-width: 767px) {
+    .img-contact {
+        margin: 0 auto; /* center image horizontally for small screens */
+    }
+
+    .contact-wrapper {
+        width: 90%;
+        text-align: center;
+        margin-right: 7rem;
+    }
+
+}
+
+
 .contact {
+    display: flex;
     width: 450px;
     height: 480px;
     margin-top: -30rem;
@@ -31,6 +61,7 @@
 .contact p {
     margin-left: 4rem;
     margin-top: 4rem;
+    font-family: 'Source Sans 3', sans-serif;
 }
 
 b {
@@ -38,11 +69,12 @@ b {
     font-family: var(--main-font);
     color: var(--main-color);
     padding: 13px;
+    margin-left: 3rem;
 }
 
 .input {
     font-weight:500;
-    font-size: 18px;
+    font-size: 14px;
     border-radius: 10px;
     line-height: 22px;
     background-color: transparent;
@@ -51,12 +83,18 @@ b {
     transition: all 0.3s;
     padding: 13px;
     margin-bottom: 15px;
+    margin-left: 3rem;
     width: 100%;
-    box-sizing: border-box #f2f2ff;
     outline: 0;
+    font-family: 'Source Sans 3', sans-serif;
+
   }
 
- .input:focus { border:2px solid var(--main-color); }
+ .input:focus { border: 2px solid var(--main-color); }
+
+  p {
+    margin-left: 3rem;
+ }
   
   .textarea {
     height: auto;
@@ -64,6 +102,7 @@ b {
     line-height: 150%;
     resize: vertical;
     margin-left: 500px;
+    margin-left: 3rem;
   }
   
   [type="submit"] {
@@ -73,7 +112,7 @@ b {
     text-align: center;
     text-decoration: none;
     display: inline-block;
-    font-size: 16px;
+    font-size: 15px;
     margin: 4px 2px;
     transition-duration: 0.4s;
     cursor: pointer;
@@ -81,30 +120,58 @@ b {
     margin-top: 3rem;
     color: #fff;
     width: 75%;
+    margin-left: 3rem;
   }
 
-  [type="submit"]:hover { background:#05c2df; }
-
-  #adress {
-    text-align: center;
-
-  }
-
-#address p {
-    margin: 5px 0;
-    margin-left: 6rem;
-    text-align: center;
+  [type="submit"]:hover { 
+    background:#05c2df; 
 }
 
-#address a {
+  .address {
+    text-align: center;
+
+  }
+
+.address p {
+    margin: 5px 0;
+    margin-left: 10rem;
+    text-align: center;
+    font-family: 'Source Sans 3', sans-serif;
+}
+
+.address a {
     color: #07aac4;
     text-decoration: none;
 }
 
-.googlemaps {
-    margin-left: 8rem;
+@media only screen and (max-width: 768px) {
+    .address p {
+        display: none;
+    }
+
 }
+
+.googlemaps {
+    display: flex;
+    margin-left: 12rem;
+    height: 800px;
+    width: 450px;
+    border: 0px;
+}
+
+
+@media only screen and (max-width: 768px) {
+    .googlemaps {
+        flex-direction: column;
+        width: 100%;
+        height: 700px;
+        margin-left: 3px;
+    }
+
+}
+
 
 .link {
     color: var(--main-color);
+    font-family: 'Source Sans 3', sans-serif;
 }

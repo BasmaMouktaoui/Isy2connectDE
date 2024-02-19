@@ -63,6 +63,7 @@
     margin-left: 5rem;
     color: #fff;
     width: 30rem;
+    font-family: 'Source Sans 3', sans-serif;
 }
 
 .card b {
@@ -120,8 +121,8 @@
 
     .card p {
         font-size: 20px;
-    }
   }
+}
 
 .contact-btn {
     border-style: solid;
@@ -149,7 +150,6 @@
 .img-prijzen2 {
     margin-left: 45rem;
     margin-top: -50.4rem;
-    height: 52%;
 }
 
 @media only screen and (max-width: 480px) {
@@ -197,6 +197,7 @@
     width: 400px;
     margin-left: 5rem;
     margin-top: -10px;
+    font-family: 'Source Sans 3', sans-serif;
 }
 
 .card-2 h5 {
@@ -206,5 +207,19 @@
     font-family: var(--main-font);
 }
 
+@media only screen and (max-width: 768px) {
+
+  .card-2 h2 {
+      font-size: 60px;
+  }
+
+  .card-2 p {
+      font-size: 15px;  
+  }
+
+  .adress {
+   
+  }
+}
 
 
