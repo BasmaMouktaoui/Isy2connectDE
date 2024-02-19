@@ -18,8 +18,14 @@
 
 @media only screen and (max-width: 1200px) {
     .img-contact {
-        margin-left: 15.2rem; /* center image horizontally for small screens */
         width: auto;
+    }
+
+    .contact-wrapper b {
+        clear: both;
+        display: inline-block;
+        overflow: hidden;
+        white-space: nowrap;
     }
 }
 
@@ -33,6 +39,14 @@
 @media only screen and (max-width: 767px) {
     .img-contact {
         margin: 0 auto; /* center image horizontally for small screens */
+        width: auto;
+        object-fit: scale-down; /* center image horizontally for small screens */
+    }
+
+    .img-contact img {
+        max-width: 100%;
+        max-height: auto;
+        width: 100%;
     }
 
     .contact-wrapper {
@@ -41,13 +55,20 @@
         margin-right: 7rem;
     }
 
+    .contact-wrapper b {
+        clear: both;
+        display: inline-block;
+        overflow: hidden;
+        white-space: nowrap;
+    }
+
 }
 
 
 .contact {
     display: flex;
-    width: 450px;
-    height: 480px;
+    width: 40%;
+    height: 25rem   ;
     margin-top: -30rem;
 }
 
@@ -59,7 +80,7 @@
 }
 
 .contact p {
-    margin-left: 4rem;
+    margin-left: -9rem;
     margin-top: 4rem;
     font-family: 'Source Sans 3', sans-serif;
 }
@@ -94,8 +115,15 @@ b {
 
   p {
     margin-left: 3rem;
+    font-family: 'Source Sans 3', sans-serif;
  }
-  
+
+ @media screen and (max-width: 770px) {
+    .contact {
+        padding-top: 11rem;
+    }
+ }
+
   .textarea {
     height: auto;
     width: 100%;
@@ -153,12 +181,11 @@ b {
 
 .googlemaps {
     display: flex;
-    margin-left: 12rem;
+    margin-left: 10rem;
     height: 800px;
     width: 450px;
     border: 0px;
 }
-
 
 @media only screen and (max-width: 768px) {
     .googlemaps {
@@ -169,7 +196,6 @@ b {
     }
 
 }
-
 
 .link {
     color: var(--main-color);
