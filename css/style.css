@@ -525,6 +525,8 @@ body {
 
 .footer-img {
   margin-top: 3rem;
+  height: auto;
+  width: 130px;
 }
 
 .footer-button {
