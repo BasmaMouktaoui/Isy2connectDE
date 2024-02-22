@@ -41,6 +41,14 @@
   }
 }
 
+@media (max-width: 500px) {
+  .img5 img{
+    max-width: 100%;
+    width: 100%;
+    object-fit: cover; 
+  }
+}
+
 /* zoals eerder gezegd, verdeeld de flexbox automatisch de divs
    binnen de flexbox container nu word het door 2 gedeeld. 
    als je een 3e div toevoegd word het door 3 gedeeld */
@@ -308,12 +316,7 @@
 }
 
 .logo-footer {
-  margin-left: 2rem;
+  margin-left: 1rem;
   height: auto;
   width: 130px;
 }
-
-/*.f-img {
-  height: 130px;
-  width: 160px;
-}*/
