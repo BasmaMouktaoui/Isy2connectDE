@@ -7,7 +7,7 @@
 /* Maak flex container, hierin zit de image en tekst */
 .home-container {
   display: flex;
-  height: 40%;
+  height: auto;
 }
 
 /* Zorgt ervoor dat het onder elkaar komt */
@@ -21,7 +21,7 @@
    omdat er 2 items in de flex container zitten (div img5 en div mogelijkheden tekst)
    worden deze automatisch verdeeld in de flex container  */
 .img5 {
-  height: 100%;
+  max-height: 100%;
   width: 100%;
   background-size: 100% 100%;
 }
@@ -37,11 +37,11 @@
   .img5 img{
     width: 100%;
     height: auto; /* adjust height to content */
-
+    max-width: 100%;
   }
 }
 
-@media (max-width: 500px) {
+@media (max-width: 600px) {
   .img5 img{
     max-width: 100%;
     width: 100%;
@@ -55,6 +55,7 @@
 .mogelijkheden-tekst {
   background-color: var(--main-color);
   border: #07aac4;
+  height: 64.2rem;
 }
 
 .mogelijkheden-tekst h1 {
@@ -70,6 +71,7 @@
   color: #fff;
   margin-left: 2rem;
   font-size: 17px;
+  width: 80%;
 }
 
 /* Einde feedback */
@@ -96,10 +98,12 @@
 
 @media (max-width: 900px) {
   .mogelijkheden-tekst {
-    width: 100%;
     height: auto; /* adjust height to content */
     margin-left: 0%;
     margin-top: -4px;
+    width: 100%;
+    max-width: none;
+    padding: 40px 0;
   }
 
   .mogelijkheden-tekst h1 {
@@ -110,7 +114,7 @@
   .mogelijkheden-tekst p {
     margin-bottom: 7rem;
     width: 80%;
-    font-size: 25px;
+    font-size: 30px;
   }
 }
 
@@ -149,10 +153,17 @@
 }
 
 .round-img {
-  flex-basis: calc(33.33% - 2rem);
+  /*flex-basis: calc(33.33% - 2rem);
   margin-bottom: 2rem;
   padding: 3rem;
-  height: 50rem;
+  height: 50rem;*/
+   flex-basis: calc(20% - 2rem);
+   position: relative;
+    z-index: 2;
+    box-sizing: border-box;
+    width: 100%;
+    margin: 0 auto;
+    padding: 60px 20px;
 }
 
 .round-img b {
@@ -161,6 +172,10 @@
   font-family: "Passion One", sans-serif;
   margin-left: 10px;
   margin-left: 1rem;
+  clear: both;
+  display: inline-block;
+  overflow: hidden;
+  white-space: nowrap;
 }
 
 .round-img p {
@@ -173,6 +188,27 @@
   font-size: 1rem;
   margin-left: 1rem;
   font-family: 'Source Sans 3', sans-serif;
+}
+
+@media (max-width: 1400px) {
+  .round-img {
+    flex-basis: calc(40% - 2rem);
+    max-width: 900px;
+  }
+
+  img {
+    height: 350px;
+    width: 350px;
+  }
+
+  .round-img b {
+    font-size: 45px;
+  }
+
+  .round-img p {
+    font-size: 20px;
+    width: 18rem;
+  }
 }
 
 @media (max-width: 1100px) {
@@ -215,7 +251,7 @@
   }
 }
 
-@media (max-width: 500px) {
+@media (max-width: 700px) {
   .round-img {
     margin-right: auto;
     margin-left: auto;
@@ -232,8 +268,10 @@
   }
 
   img {
-    height: 700px;
-    width: 700px;
+    height: auto;
+    width: fit-content;
+    max-width: 500px;
+    
   }
 
 }

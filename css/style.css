@@ -159,7 +159,7 @@ body {
 
   /* 48em = 768px */
   
-  @media (min-width: 60em) {
+  @media (min-width: 1000px) {
     .header li {
       float: left;
     }
@@ -495,6 +495,13 @@ body {
     }
   }
 
+  @media (min-width: 1032px) {
+    .img4 {
+      width: 50%;
+      height: auto;
+    }
+  }
+
 @media (max-width: 768px) {
   .img2  {
       display: none;
@@ -508,15 +515,15 @@ body {
 }
 
 @media (max-width: 768px) {
-.img3 {
-  margin-left: 0px;
-  margin-right: 0px;
-  }
-}
+  .img3 {
+    margin-left: 0px;
+    margin-right: 0px;
+    }
 
-.img4 {
-  height: 34rem;
-  width: fit-content;
+  .img4 {
+    height: 34rem;
+    width: fit-content;
+  }
 }
 
 /* ==== footer ==== */

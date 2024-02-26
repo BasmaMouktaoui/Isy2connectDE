@@ -1,225 +1,272 @@
 :root {
-    --main-color: #07aac4;
-    --main-font: 'Passion One', sans-serif;
+  --main-color: #07aac4;
+  --main-font: 'Passion One', sans-serif;
 }
 
 .img-prijzen {
-    margin-top: 5rem;
-    width: 60%;
-    background-size: 100% 100%;
+  margin-top: 5rem;
+  width: 60%;
+  background-size: 100% 100%;
+}
 
+/* Mobile (portrait) */
+@media(max-width: 1000px) {
+  .img-prijzen {
+    width: 100%;
+    display: block;
+    margin: 10px 0;
+    object-fit: cover;
+  }
+
+  .img-prijzen img{
+  width: 100%;
+  height: auto; /* adjust height to content */
+  margin-bottom: -25px;
+
+}
 }
 
 
 @media (max-width: 768px) {
-  .img-prijzen img{
-    width: 100%;
-    height: auto; /* adjust height to content */
-    margin-bottom: -25px;
+.img-prijzen img{
+  width: 100%;
+  height: auto; /* adjust height to content */
+  margin-bottom: -25px;
 
-  }
+}
 }
 
 @media only screen and (max-width: 480px) {
-    .img-prijzen {
-      display: block;
-      width: 100%;
-      object-fit: cover;
-    }
+  .img-prijzen {
+    display: block;
+    width: 100%;
+    object-fit: cover;
   }
+}
 
-  /* Mobile (portrait) */
+/* Mobile (portrait) */
 @media only screen and (max-width: 768px) {
-    .img-prijzen {
-      width: 100%;
-      display: block;
-      margin: 10px 0;
-      object-fit: cover;
+  .img-prijzen {
+    width: 100%;
+    display: block;
+    margin: 10px 0;
+    object-fit: cover;
 
-    }
   }
-  
-  /* Tablet (landscape) */
-  @media only screen and (min-width: 481px) and (max-width: 768px) {
-    .img-prijzen {
-      width: 100%;
-      display: inline-block;
-      vertical-align: top;
-      margin: 10 0px;
-      object-fit: cover;
-    }
+}
+
+/* Tablet (landscape) */
+@media only screen and (min-width: 481px) and (max-width: 768px) {
+  .img-prijzen {
+    width: 100%;
+    display: inline-block;
+    vertical-align: top;
+    margin: 10 0px;
+    object-fit: cover;
   }
+}
 
 .card {
-    border: solid 3px var(--main-color);
-    height: 50.8rem;
-    width: 45.2rem;
-    background-color: var(--main-color);
-    margin-left: 44.8rem;
-    margin-top: -51rem;
+  border: solid 3px var(--main-color);
+  height: 50.8rem;
+  width: 45.2rem;
+  background-color: var(--main-color);
+  margin-left: 44.8rem;
+  margin-top: -51rem;
 }
 
 .card p {
-    margin-left: 5rem;
-    color: #fff;
-    width: 30rem;
-    font-family: 'Source Sans 3', sans-serif;
+  margin-left: 5rem;
+  color: #fff;
+  width: 30rem;
+  font-family: 'Source Sans 3', sans-serif;
 }
 
 .card b {
-    margin-left: 5rem;
-    color: #fff;
-    font-family: var(--main-font);
-    font-size: 20px;
+  margin-left: 5rem;
+  color: #fff;
+  font-family: var(--main-font);
+  font-size: 20px;
 }
 
 
 .card h2 {
-    margin-left: 5rem;  
-    margin-top: 8rem;
-    font-size: 50px;
-    font-family: var(--main-font);
-    color: #fff;
+  margin-left: 5rem;  
+  margin-top: 8rem;
+  font-size: 50px;
+  font-family: var(--main-font);
+  color: #fff;
 }
 
 @media only screen and (max-width: 480px) {
-    .card {
-      display: block;
-      width: 100%;
-    }
-  }
-
-  /* Mobile (portrait) */
-@media only screen and (max-width: 768px) {
-    .card {
-      width: 100%;
-      display: block;
-      margin: 10px 0;
-    }
-
-    .card h2 {
-        font-size: 60px;
-    }
-
-    .card p {
-        font-size: 20px;
-    }
-  }
-  
-  /* Tablet (landscape) */
-  @media only screen and (min-width: 481px) and (max-width: 768px) {
-    .card {
-      width: 100%;
-      display: inline-block;
-      vertical-align: top;
-      margin: 10 0px;
-    }
-
-    .card h2 {
-        font-size: 60px;
-    }
-
-    .card p {
-        font-size: 20px;
+  .card {
+    display: block;
+    width: 100%;
   }
 }
 
-.contact-btn {
-    border-style: solid;
-    border-color: var(--main-color);
-    background-color: #fff;
-    padding: 16px 32px;
-    text-align: center;
+@media only screen and (max-width: 1000px) {
+  .card {
+    width: 100%;
+    display: block;
+    margin: 10px 0;
+  }
+
+  .card h2 {
+      font-size: 60px;
+  }
+
+  .card p {
+      font-size: 20px;
+  }
+}
+
+/* Mobile (portrait) */
+@media only screen and (max-width: 768px) {
+  .card {
+    width: 100%;
+    display: block;
+    margin: 10px 0;
+  }
+
+  .card h2 {
+      font-size: 60px;
+  }
+
+  .card p {
+      font-size: 20px;
+  }
+}
+
+/* Tablet (landscape) */
+@media only screen and (min-width: 481px) and (max-width: 768px) {
+  .card {
+    width: 100%;
     display: inline-block;
-    font-size: 16px;
-    cursor: pointer;
-    border-radius: 1.5rem;
-    margin-left: 5rem;
-    margin-top: 5rem;
-    transition-duration: 0.4s;
-    color: #fff;
-    font-family: 'Source Sans 3', sans-serif;
+    vertical-align: top;
+    margin: 10 0px;
+  }
+
+  .card h2 {
+      font-size: 60px;
+  }
+
+  .card p {
+      font-size: 20px;
+}
+}
+
+.contact-btn {
+  border-style: solid;
+  border-color: var(--main-color);
+  background-color: #fff;
+  padding: 16px 32px;
+  text-align: center;
+  display: inline-block;
+  font-size: 16px;
+  cursor: pointer;
+  border-radius: 1.5rem;
+  margin-left: 5rem;
+  margin-top: 5rem;
+  transition-duration: 0.4s;
+  color: #fff;
+  font-family: 'Source Sans 3', sans-serif;
 }
 
 
 .contact-btn:hover {
-    background-color: #f2f2f2;
-    text-decoration: white;
-  }
+  background-color: #f2f2f2;
+  text-decoration: white;
+}
 
 .img-prijzen2 {
-    margin-left: 45rem;
-    margin-top: -50.4rem;
+  margin-left: 45rem;
+  margin-top: -50.4rem;
 }
 
 @media only screen and (max-width: 480px) {
-    .img-prijzen2 {
-      display: block;
-      width: 100%;
-    }
+  .img-prijzen2 {
+    display: block;
+    width: 100%;
+  }
+}
+
+@media only screen and (max-width: 1000px) {
+  .img-prijzen2 {
+    width: 100%;
+    display: block;
+    margin: 10px 0;
   }
 
-  /* Mobile (portrait) */
+  .img-prijzen2 img{
+  width: 100%;
+  height: auto; /* adjust height to content */
+  margin-bottom: -25px;
+
+}
+}
+
+/* Mobile (portrait) */
 @media only screen and (max-width: 768px) {
-    .img-prijzen2 {
-      width: 100%;
-      display: block;
-      margin: 10px 0;
-    }
+  .img-prijzen2 {
+    width: 100%;
+    display: block;
+    margin: 10px 0;
   }
-  
-  /* Tablet (landscape) */
-  @media only screen and (min-width: 481px) and (max-width: 768px) {
-    .img-prijzen2 {
-      width: 100%;
-      display: inline-block;
-      vertical-align: top;
-      margin: 10 0px;
-    }
+}
+
+/* Tablet (landscape) */
+@media only screen and (min-width: 481px) and (max-width: 768px) {
+  .img-prijzen2 {
+    width: 100%;
+    display: inline-block;
+    vertical-align: top;
+    margin: 10 0px;
   }
+}
+
+
 
 .card-2 {
-    height: 50.4rem;
-    width: 45rem;
-    border: solid white;
+  height: 50.4rem;
+  width: 45rem;
+  border: solid white;
 }
 
 .titel {
-    font-size: 30px;
-    font-family: var(--main-font);
-    color: var(--main-color);
-    margin-left: 5rem;
-    margin-top: 5rem;
+  font-size: 30px;
+  font-family: var(--main-font);
+  color: var(--main-color);
+  margin-left: 5rem;
+  margin-top: 5rem;
 }
 
 
 .card-2 p {
-    width: 400px;
-    margin-left: 5rem;
-    margin-top: -10px;
-    font-family: 'Source Sans 3', sans-serif;
+  width: 450px;
+  margin-left: 5rem;
+  margin-top: -10px;
+  font-family: 'Source Sans 3', sans-serif;
 }
 
 .card-2 h5 {
-    margin-left: 5rem;
-    margin-top: 4rem;
-    font-size: 20px;
-    font-family: var(--main-font);
+  margin-left: 5rem;
+  margin-top: 4rem;
+  font-size: 20px;
+  font-family: var(--main-font);
 }
 
 @media only screen and (max-width: 768px) {
 
-  .card-2 h2 {
-      font-size: 60px;
-  }
-
-  .card-2 p {
-      font-size: 15px;  
-  }
-
-  .adress {
-   
-  }
+.card-2 h2 {
+    font-size: 60px;
 }
 
+.card-2 p {
+    font-size: 15px;  
+}
 
+.adress {
+ 
+}
+}
