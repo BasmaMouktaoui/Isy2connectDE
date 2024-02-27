@@ -318,14 +318,32 @@
 }
 
 /* Media query for screens smaller than 768px */
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 1100px) {
   .text3 {
     height: 80rem;
   }
 
   #text3  {
       margin-top: 39rem;
-      margin-left: -5rem;
+      width: 80%;
+  }
+
+  #text3 p {
+    width: 100%;
+    font-size: 20px;
+  }
+
+}
+
+/* Media query for screens smaller than 768px */
+@media screen and (max-width: 900px) {
+  .text3 {
+    height: 90rem;
+  }
+
+  #text3  {
+      margin-top: 39rem;
+      margin-left: -2rem;
   }
 
   #text3 p {
@@ -335,22 +353,25 @@
 
 }
 
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 1100px) {
   .img6 {
-    margin-left: 5.5rem;
-    margin-right: 0px;
+    margin: auto;
+  }
+}
+
+@media screen and (max-width: 900px) {
+  .img6 {
+    margin: auto;
     position: relative;
   }
-
 }
 
 
 
 @media screen and (max-width: 400px) {
   .img6 {
-    margin-left: 8rem;
+    margin: auto;
   }
-
 }
 
 .logo-footer {

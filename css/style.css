@@ -60,10 +60,14 @@ body {
       border-radius: 1.5rem;
   }
 
+  @media screen and (max-width: 1075px) {
+    .header .btn {
+      display: none;
+    }
+  } 
 
   .header .menu  :hover{
     color: var(--main-color);
-
     line-height: 1.5;
 }
   
@@ -475,7 +479,7 @@ body {
   }
 }
 
-@media (max-width: 567px) {
+@media (max-width: 580px) {
   .button-contact {
     margin-left: 2rem;
   }
