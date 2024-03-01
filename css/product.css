@@ -189,7 +189,7 @@
   }
 
   .mogelijkheden-tekst h1 {
-    font-size: 30px; /* adjust font size to fit smaller screens */
+    font-size: 25px; /* adjust font size to fit smaller screens */
     margin-top: 5rem;
     margin: 0;
     padding-left: 1rem;
@@ -197,7 +197,7 @@
   }
 
   .mogelijkheden-tekst p {
-    font-size: 20px; /* adjust font size to fit smaller screens */
+    font-size: 15px; /* adjust font size to fit smaller screens */
     padding-top: 3rem;
     padding-bottom: 3rem;
     width: 80%;
@@ -372,7 +372,7 @@
   .round-img p {
     width: 100%;
     margin: 0;
-    font-size: 20px;
+    font-size: 15px;
   }
 }
 
@@ -482,7 +482,7 @@
     margin: 0;
     padding: 1em;
     width: 100%;
-    font-size: 20px;
+    font-size: 15px;
   }
 
 }
@@ -508,7 +508,7 @@
     margin: 0;
     padding: 1em;
     width: 100%;
-    font-size: 20px;
+    font-size: 15px;
   }
 }
 
