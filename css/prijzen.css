@@ -126,16 +126,30 @@
   .card {
     width: 100%;
     display: block;
-    margin: 10px 0;
+    margin:  0;
+    padding: 2rem;
   }
 
   .card h2 {
       font-size: 60px;
+      margin: 0;
+      margin-bottom: 2rem;
+  }
+
+    .card b {
+    font-size: 25px;
+    margin: 0;
+    width: 100%;
+    margin-top: rem;
   }
 
   .card p {
-      font-size: 20px;
+    font-size: 20px;
+    margin: 0;
+    width: 100%;
+    margin-top: 3rem;
   }
+
 }
 
 /* Tablet (landscape) */
@@ -166,8 +180,8 @@
   font-size: 16px;
   cursor: pointer;
   border-radius: 1.5rem;
-  margin-left: 5rem;
   margin-top: 5rem;
+  margin-left: 5rem;
   transition-duration: 0.4s;
   color: #fff;
   font-family: 'Source Sans 3', sans-serif;
@@ -211,7 +225,8 @@
   .img-prijzen2 {
     width: 100%;
     display: block;
-    margin: 10px 0;
+    margin: 0;
+    margin-top: 2rem;
   }
 }
 
@@ -229,11 +244,12 @@
 
 .card-2 {
   height: 50.4rem;
-  width: 45rem;
+  /*width: 45rem;*/
   border: solid white;
 }
 
 .titel {
+  width: 500px;
   font-size: 30px;
   font-family: var(--main-font);
   color: var(--main-color);
@@ -260,10 +276,28 @@
 
 .card-2 h2 {
     font-size: 60px;
+    margin: 0;
+    padding: 1rem;
 }
 
+  .card-2 h5 {
+    margin: 0;
+    padding: 1rem;
+}
+
+  .titel {
+    font-size: 25px;
+    margin: 0;
+    width: 90%;
+    margin-bottom: 3rem;
+    padding: 1rem;
+  }
+
 .card-2 p {
-    font-size: 15px;  
+    font-size: 15px;
+    margin: 0;
+    width: 90%;
+    padding: 1rem;
 }
 
 .adress {
