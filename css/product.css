@@ -41,11 +41,28 @@
   }
 }
 
-@media (max-width: 600px) {
+/*@media (max-width: 600px) {
   .img5 img{
     max-width: 100%;
     width: 100%;
     object-fit: cover; 
+  }
+}*/
+
+@media (max-width: 768px) {
+  .img5 img{
+    max-width: 100%;
+    width: 100%;
+    object-fit: cover;
+  }
+}
+
+@media (max-width: 448px) {
+  .img5 img{
+    margin: 0;
+    max-width: 100%;
+    width: 600px;
+    object-fit: cover;
   }
 }
 
@@ -140,6 +157,55 @@
 }
 
 
+@media (max-width: 700px) {
+  .mogelijkheden-tekst {
+    width: 100%;
+    max-width: fit-content;
+    height: auto; /* adjust height to content */
+    margin-left: 0%;
+    margin-top: -4px;
+  }
+
+  .mogelijkheden-tekst h1 {
+    font-size: rem; /* adjust font size to fit smaller screens */
+    margin-top: 5rem;
+  }
+
+  .mogelijkheden-tekst p {
+    font-size: 23px; /* adjust font size to fit smaller screens */
+    margin: 2rem; /* adjust margin to fit smaller screens */
+    margin-bottom: 7rem;
+    width: 80%;
+  }
+}
+
+@media (max-width: 448px) {
+  .mogelijkheden-tekst {
+    width: 100%;
+    margin: 0;
+    height: auto; /* adjust height to content */
+    margin-left: 0;
+    margin-top: -4px;
+  }
+
+  .mogelijkheden-tekst h1 {
+    font-size: 30px; /* adjust font size to fit smaller screens */
+    margin-top: 5rem;
+    margin: 0;
+    padding-left: 1rem;
+    width: 80%;
+  }
+
+  .mogelijkheden-tekst p {
+    font-size: 20px; /* adjust font size to fit smaller screens */
+    padding-top: 3rem;
+    padding-bottom: 3rem;
+    width: 80%;
+    padding-left: 1em;
+    margin: 0;
+  }
+}
+
 .box {
   max-width: 1200px;
   margin: 0 auto;
@@ -165,6 +231,8 @@
     margin: 0 auto;
     padding: 60px 20px;
 }
+
+
 
 .round-img b {
   color: var(--main-color);
@@ -217,8 +285,8 @@
   }
 
   img {
-    height: 350px;
-    width: 350px;
+    height: 500px;
+    width: 500px;
   }
 
   .round-img b {
@@ -238,8 +306,9 @@
   }
 
   img {
-    height: 320px;
-    width: 320px;
+    height: auto;
+    width: 500px;
+    max-width: fit-content;
   }
 
   .round-img b {
@@ -250,6 +319,7 @@
     width: 100%;
   }
 }
+
 
 @media (max-width: 700px) {
   .round-img {
@@ -273,7 +343,37 @@
     max-width: 500px;
     
   }
+}
 
+@media (max-width: 448px) {
+  .round-img {
+    flex-basis: calc(40% - 2rem);
+    margin: 0;
+  }
+
+  img {
+    height: auto;
+    width: 300px;
+    max-width: fit-content;
+  }
+
+  .round-img b {
+    font-size: 35px;
+    margin: 0;
+    
+  }
+
+  /*.round-img img {
+    height: auto;
+    width: 300px;
+    margin: 0;
+  }*/
+
+  .round-img p {
+    width: 100%;
+    margin: 0;
+    font-size: 20px;
+  }
 }
 
 .text3 {
@@ -342,16 +442,78 @@
   }
 
   #text3  {
-      margin-top: 39rem;
-      margin-left: -2rem;
+    margin: 0;
+    padding-top: 7rem;
+    margin-left: -5rem;
+  }
+
+    #text3 h3 {
+    margin: 0;
+    padding-left: 8rem;
+    font-size: 30px;
+    width: 100%;
   }
 
   #text3 p {
-    width: 90%;
+    width: 100%;
     font-size: 20px;
   }
 
 }
+
+/* Media query for screens smaller than 768px */
+@media screen and (max-width: 448px) {
+  .text3 {
+    margin: 0;
+  }
+
+  #text3  {
+      margin: 0;
+  }
+
+    #text3 h3 {
+    margin: 0;
+    padding: 1rem;
+    font-size: 30px;
+    width: 100%;
+  }
+
+  #text3 p {
+    margin: 0;
+    padding: 1em;
+    width: 100%;
+    font-size: 20px;
+  }
+
+}
+
+@media screen and (max-width: 390px) {
+  .text3 {
+    margin: 0;
+    height: 100rem;
+  }
+
+  #text3  {
+      margin: 0;
+  }
+
+    #text3 h3 {
+    margin: 0;
+    padding: 1rem;
+    font-size: 30px;
+    width: 100%;
+  }
+
+  #text3 p {
+    margin: 0;
+    padding: 1em;
+    width: 100%;
+    font-size: 20px;
+  }
+}
+
+/* Media query for screens smaller than 768px */
+
 
 @media screen and (max-width: 1100px) {
   .img6 {
@@ -363,14 +525,18 @@
   .img6 {
     margin: auto;
     position: relative;
+    height: auto;
   }
 }
 
 
 
-@media screen and (max-width: 400px) {
+@media screen and (max-width: 480px) {
   .img6 {
-    margin: auto;
+    margin: 0;
+    width: 390px;
+    height: auto;
+    margin-left: 1rem;
   }
 }
 
